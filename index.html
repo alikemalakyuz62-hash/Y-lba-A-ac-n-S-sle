@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yılbaşı Ağacı</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div id="tree-container">
+<img id="tree" src="tree.png" alt="Çam Ağacı">
+
+    </div>
+
+<div id="controls">
+    <button onclick="selectOrnament('⭐')">⭐</button>
+    <button onclick="selectOrnament('🎄')">🎄</button>
+    <button onclick="selectOrnament('🎁')">🎁</button>
+    <button onclick="selectOrnament('❄️')">❄️</button>
+    <button onclick="toggleMusic()">🎵 Müzik</button>
+    <button onclick="clearDecorations()">♻️ Sıfırla</button>
+    <button onclick="downloadTree()">💾 Kaydet</button>
+    <span id="counter">🎁 Eklenen süs: 0</span>
+</div>
+
+<div id="snow"></div>
+
+<audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
